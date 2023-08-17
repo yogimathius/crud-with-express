@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Watch this FunHouse Cinema Movie!</h1>
+    <h2><%= movie.title %></h2>
+    <p><%= movie.year %></p>
+    <a href="/movies">Back to movies</a>
+    <a href="/movies/<%= movieKey %>/edit">Edit Movie</a>
+    <form method="POST" action="/movies/<%= movieKey %>/delete"">
+
+      <input type="submit" value="Delete movie" />
+    </form>
+  </body>
+</html>

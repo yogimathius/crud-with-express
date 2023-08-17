@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Update movie listing</h1>
+
+    <form method="POST" action="/movies/<%= movieKey %>">
+      <label
+        >Title
+
+        <input name="title" value="<%= movie.title %>" />
+      </label>
+      <label
+        >Year
+
+        <input name="year" value="<%= movie.year %>" />
+      </label>
+      <button>Save</button>
+    </form>
+  </body>
+</html>
