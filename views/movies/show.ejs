@@ -11,7 +11,7 @@
     <p><%= movie.year %></p>
     <a href="/movies">Back to movies</a>
     <a href="/movies/<%= movieKey %>/edit">Edit Movie</a>
-    <form method="POST" action="/movies/<%= movieKey %>/delete"">
+    <form method="POST" action="/api/movies/<%= movieKey %>/delete"">
 
       <input type="submit" value="Delete movie" />
     </form>
